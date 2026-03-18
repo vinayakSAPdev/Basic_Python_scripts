@@ -1,0 +1,2 @@
+This is a new line of text.
+This file is created using Python's with statement.

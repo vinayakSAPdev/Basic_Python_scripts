@@ -71,6 +71,12 @@ thisdict = {
 mydict = thisdict.copy()
 print(mydict)
 
+#deleting item in dictionary
+d = {"a": 1, "b": 2}
+
+del d["a"]
+
+print(d)   # {'b': 2}
 
 # Make a copy of a dictionary with the dict() function:
 thisdict = {
@@ -144,3 +150,9 @@ for i, ch in enumerate(s):
     if uniquech[ch] == 1:
         print("Index:", i)
         break
+
+#square numbers in list
+# nums = [1, 2, 3, 4, 5]
+squared = {num: num**2 for num in range(1, 6)}
+print(squared)
+
