@@ -145,7 +145,8 @@ s = "leetcode"
 uniquech = {}
 
 for ch in s:
-    uniquech[ch] = uniquech.get(ch,0) + 1
+    #if there is no value in uniquech for key ch, it returns 0, otherwise it returns the current count. Then we add 1 to it.
+    uniquech[ch] = uniquech.get(ch,0) + 1    
 for i, ch in enumerate(s):
     if uniquech[ch] == 1:
         print("Index:", i)
@@ -156,3 +157,7 @@ for i, ch in enumerate(s):
 squared = {num: num**2 for num in range(1, 6)}
 print(squared)
 
+# lets practice enumurates looping in details
+string = "hello"
+for index, char in enumerate(string):
+    print(f"Index: {index}, Character: {char}")

@@ -1,0 +1,72 @@
+{
+  "fields": [
+    {
+      "name": "EST",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "Temperature",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "Humidity",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "Precipitation",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "Cloud Cover",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "Event",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "Wind Speed",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "Wind Direction",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "Pressure",
+      "type": "year",
+      "format": "default"
+    },
+    {
+      "name": "Visibility",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "UV Index",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "Sunrise",
+      "type": "time",
+      "format": "%H:%M"
+    },
+    {
+      "name": "Sunset",
+      "type": "time",
+      "format": "%H:%M"
+    }
+  ],
+  "missingValues": [
+    ""
+  ]
+}

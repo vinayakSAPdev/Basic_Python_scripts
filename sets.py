@@ -56,7 +56,7 @@ user2_friends = {"B", "C", "D"}
 print(f"Mutual friends {user1_friends.intersection(user2_friends)}")
 
 # Problem 7: Unique Words in Text (AI/NLP Use Case)
-text = "python is easy and python is powerful"
+text = "python is easy and python is powerful"  
 words = text.split()
 unique_words = set(words)
 
@@ -87,4 +87,113 @@ for num in nums:
     seen.add(num)
 else:
     print("No pair found")
+
+
+
+newset = {"apple", "banana", "cherry"}
+newset1 = ["apple", "banana", "cherry"]
+print(newset)
+newset.add("orange")
+print(newset)
+print("extracted itmes are",newset.pop()    )
+print(newset)
+print("extracted itmes are",newset1[1:2]  )
+if 'banana' in newset:
+    print("banana is present in the set")
+numbers = {1, 2, 3, 4, 5}
+squared_numbers = {x**2 for x in numbers}
+print(squared_numbers)
+
+#tuples
+my_tuple = (1, 2, 3, 4, 5)
+print(my_tuple)
+a,b,c = my_tuple[0:3]
+print(a,b,c)
+
+#dictionaries is like json
+my_dict = {"name": "Alice", "age": 30, "city": "New York"}
+print(my_dict)
+#crete some example dictionary
+person = {
+    "name": "John",
+    "age": 25,
+    "city": "New York",
+    "hobbies": ["reading", "traveling", "coding"],
+    "education": {
+        "degree": "Bachelor's",
+        "major": "Computer Science",
+        "university": "XYZ University"
+    },
+    "name": "albert",
+    "age": 28,
+    "city": "India",
+    "hobbies": ["workout", "traveling", "swimming"],
+    "education": {
+        "degree": "Master's",
+        "major": "AI/ML",
+        "university": "XYZ555 University"
+    }
+}
+print(person)
+print(person["name"])
+print(person["hobbies"])
+
+print(person.get("education")["degree"])
+person.update({"age": 26})
+print(person)
+
+for key, value in person.items():
+    print(f"{key}: {value}")    
+
+
+#dictionary comprehension
+squared_dict = {x: x**2 for x in range(1, 6)}
+print(squared_dict)
+
+#explain the json model with example
+import json
+data = {
+    "name": "Alice",
+    "age": 30,
+    "city": "New York",
+    "hobbies": ["reading", "traveling", "coding"],
+    "education": {
+        "degree": "Bachelor's",
+        "major": "Computer Science",
+        "university": "XYZ University"
+    }
+}
+json_data = json.dumps(data)
+print(json_data)    
+
+#reading json data
+json_string = '{"name": "Alice", "age": 30, "city": "New York", "hobbies": ["reading", "traveling", "coding"], "education": {"degree": "Bachelor\'s", "major": "Computer Science", "university": "XYZ University"}}'
+data = json.loads(json_string)
+print(data)
+
+#crud operations on json data
+# Create
+new_data = {
+    "name": "Bob",
+    "age": 25,
+    "city": "Los Angeles",
+    "hobbies": ["music", "sports"],
+    "education": {
+        "degree": "Master's",
+        "major": "Data Science",
+        "university": "ABC University"
+    }
+}
+json_data = json.dumps(new_data)
+print(json_data)
+# Read
+json_string = '{"name": "Bob", "age": 25, "city": "Los Angeles", "hobbies": ["music", "sports"], "education": {"degree": "Master\'s", "major": "Data Science", "university": "ABC University"}}'
+data = json.loads(json_string)
+print(data)
+# Update
+data["age"] = 26
+print(data)
+# Delete
+del data["city"]
+print(data) 
 
